@@ -1,0 +1,11 @@
+Husky.Backend/.vs/
+Husky.Backend/Husky.Backend,Infrastructure/obj/
+*.cache
+Husky.Backend/Husky.Backend.Core/obj/
+Husky.Backend/Husky.Backend.Domain/obj/
+Husky.Backend/Husky.Backend.Model/obj/
+Husky.Backend/Husky.Backend/bin/
+Husky.Backend/Husky.Backend/obj/
+Husky.Backend/Husky.Backend.AutoMapper/obj/
+Husky.Backend/Husky.Backend.ProductService/obj/
+Husky.Backend/Husky.Backend.AutoMapper/bin/
