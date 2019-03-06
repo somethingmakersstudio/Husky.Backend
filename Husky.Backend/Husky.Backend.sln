@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Husky.Backend.API", "Husky.Backend\Husky.Backend.API.csproj", "{3F68E0C8-E03A-49FB-9E20-18249AEFE7AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Husky.Backend.API", "Husky.Backend\Husky.Backend.API.csproj", "{3F68E0C8-E03A-49FB-9E20-18249AEFE7AA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{3EEB237F-2758-4B17-AEF5-3B5A8FD9A943}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Husky.Backend.Model", "Husky.Backend.Model\Husky.Backend.Model.csproj", "{65EDB378-FA53-4C9E-ACEF-25C825D3E864}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Husky.Backend.Model", "Husky.Backend.Model\Husky.Backend.Model.csproj", "{65EDB378-FA53-4C9E-ACEF-25C825D3E864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Husky.Backend,Infrastructure", "Husky.Backend,Infrastructure\Husky.Backend,Infrastructure.csproj", "{9E241AAD-4305-4939-A287-25842D4D0E17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Husky.Backend.Infrastructure", "Husky.Backend,Infrastructure\Husky.Backend.Infrastructure.csproj", "{9E241AAD-4305-4939-A287-25842D4D0E17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Husky.Backend.Core", "Husky.Backend.Core\Husky.Backend.Core.csproj", "{B1E06ADC-39C7-4A18-A8C6-C60E087669B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Husky.Backend.Core", "Husky.Backend.Core\Husky.Backend.Core.csproj", "{B1E06ADC-39C7-4A18-A8C6-C60E087669B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Husky.Backend.Domain", "Husky.Backend.Domain\Husky.Backend.Domain.csproj", "{3ABE1FE5-0162-4DA2-BF5F-2990D64A4014}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Husky.Backend.Domain", "Husky.Backend.Domain\Husky.Backend.Domain.csproj", "{3ABE1FE5-0162-4DA2-BF5F-2990D64A4014}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Husky.Backend.AutoMapper", "Husky.Backend.AutoMapper\Husky.Backend.AutoMapper.csproj", "{3A8E5B49-CCDC-4F23-B18F-04606566184F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Husky.Backend.AutoMapper", "Husky.Backend.AutoMapper\Husky.Backend.AutoMapper.csproj", "{3A8E5B49-CCDC-4F23-B18F-04606566184F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{343F93AD-88C9-4E86-A651-604B3D99BEA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Husky.Backend.ProductService", "Husky.Backend.ProductService\Husky.Backend.ProductService.csproj", "{80593719-8DE5-4199-B00F-89380A15991F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Husky.Backend.ProductService", "Husky.Backend.ProductService\Husky.Backend.ProductService.csproj", "{80593719-8DE5-4199-B00F-89380A15991F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
