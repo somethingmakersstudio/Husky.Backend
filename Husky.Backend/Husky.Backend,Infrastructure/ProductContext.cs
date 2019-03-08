@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Husky.Backend.Infrastructure
 {
@@ -21,6 +22,11 @@ namespace Husky.Backend.Infrastructure
         IQueryable<NutrientInfo> IProductSource.NutrientInfoes => NutrientInfoes;
         IQueryable<Category> IProductSource.Categories => Categories;
         IQueryable<Unit> IProductSource.Units => Units;
+
+        public Task AddProduct(Product product)
+        {
+            throw new NotImplementedException();
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
