@@ -3,7 +3,9 @@ using Husky.Backend.Model;
 using Husky.Backend.Model.Products;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Husky.Backend.ProductService.Services
 {
@@ -20,17 +22,13 @@ namespace Husky.Backend.ProductService.Services
 
         //protected IProductSource GetRelevantSource(Type entityType, Type keyType, object key)
         //{
-        //    var id = Convert.ChangeType(key, keyType);
-
+        //    //var id = Convert.ChangeType(key, keyType);
         //    //TODO: Алгритм выбора релевантного источника
-
-
         //}
 
         public Product GetProduct(int id)
         {
-
-            return null;
+            return DbSource.Products.FirstOrDefault(p => p.Id == id);
         }
 
         public ProductModel GetProductModel(int id)
@@ -42,7 +40,7 @@ namespace Husky.Backend.ProductService.Services
 
         public Product GetFullProduct(int id)
         {
-            return null;
+            return DbSource.FullProducts.FirstOrDefault(p => p.Id == id);
         }
 
         public ProductModel GetFullProductModel(int id)
@@ -52,6 +50,10 @@ namespace Husky.Backend.ProductService.Services
             return null;
         }
 
+        async public Task AddProduct()
+        {
+            //TODO: Couchbase
 
+        }
     }
 }

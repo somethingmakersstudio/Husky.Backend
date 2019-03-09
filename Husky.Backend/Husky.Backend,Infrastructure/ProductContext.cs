@@ -1,4 +1,5 @@
-﻿using Husky.Backend.Model;
+﻿using Husky.Backend.Domain.ViewModels.Products;
+using Husky.Backend.Model;
 using Husky.Backend.Model.Products;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Husky.Backend.Infrastructure
 {
-    class ProductContext : DbContext, IProductSource
+    public class ProductContext : DbContext, IDbProductSource
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Nutrient> Nutrients { get; set; }
@@ -23,15 +24,20 @@ namespace Husky.Backend.Infrastructure
         IQueryable<Category> IProductSource.Categories => Categories;
         IQueryable<Unit> IProductSource.Units => Units;
 
-        public Task AddProduct(Product product)
+        IQueryable<Product> IDbProductSource.FullProducts => Products.Include(p => p.Nutrients).Include(p => p.Category).Include(p => p.Unit);
+        IQueryable<Nutrient> IDbProductSource.FullNutrients => Nutrients.Include(n => n.NutrientInfo).Include(n => n.Product);
+        IQueryable<NutrientInfo> IDbProductSource.FullNutrientInfoes => NutrientInfoes.Include(ni => ni.Nutrients);
+        IQueryable<Category> IDbProductSource.FullCategories => Categories;
+        IQueryable<Unit> IDbProductSource.FullUnits => Units.Include(u => u.Products);
+
+        public ProductContext(DbContextOptions<ProductContext> options) : base(options)
         {
-            throw new NotImplementedException();
+
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //TODO: Вынести в конфиг
-            optionsBuilder.UseSqlServer("Server=193.124.129.19; Database=ProductDB; User Id=********; Password=******;");
+
         }
     }
 }

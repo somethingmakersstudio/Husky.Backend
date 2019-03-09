@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Husky.Backend.Domain\Husky.Backend.Domain.csproj" />
     <ProjectReference Include="..\Husky.Backend.Model\Husky.Backend.Model.csproj" />
   </ItemGroup>
 
